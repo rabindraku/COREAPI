@@ -14,6 +14,7 @@ public class BusinessException extends Exception {
 	@ExceptionHandler(value = Exception.class)
 	public ResponseEntity<Object> exception(Exception exception) {
 		System.out.println("please correct it.");
+		System.out.println("this is second line.");
 		return new ResponseEntity<>("Product not  found", HttpStatus.NOT_FOUND);
 	}
 	
