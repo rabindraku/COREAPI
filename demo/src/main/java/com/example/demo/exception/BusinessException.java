@@ -13,7 +13,7 @@ public class BusinessException extends Exception {
 
 	@ExceptionHandler(value = Exception.class)
 	public ResponseEntity<Object> exception(Exception exception) {
-		System.out.println("commit using git..");
+		System.out.println("commit using git.hh.");
 		return new ResponseEntity<>("Product not  found", HttpStatus.NOT_FOUND);
 	}
 	
